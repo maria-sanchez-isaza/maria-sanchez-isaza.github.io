@@ -1,0 +1,154 @@
+/* CSS Document*/
+
+/********************************************EVENTOS GENERAL*********************************************/
+
+.full-screen {
+  display: flex;
+  width: 180vw;
+  max-height: 100%;
+  overflow: hidden;
+  height: 100%;
+
+  /* makes panels the entire window height */
+}
+section {
+	height: 100%;
+	display: block;
+	clear: none;
+	float: left;		  
+}
+
+#section-0m {	
+	width: 100%;	
+}
+#section-0m div{
+	width: 30%;
+	padding-top: 12%;	
+	padding-left: 12%;
+}
+
+#section-1m {
+	width: 80%;	
+}
+
+#section-1m nav{
+	width: 100%;
+	height: 100%;
+	padding-top: 7%;	
+}
+#section-1m nav div{
+	margin: 1%;	
+}
+
+.hover{
+	width: 40%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	clear: none;
+	float: left;	
+	z-index: 1;	
+	border: 1px solid #D1D3D4;
+}
+.hover h3, .hover p {
+	display: none;	
+	padding-top: 2%;
+	margin-top: 20%;
+	margin-bottom: 0;
+	background-color: rgba(0,0,0,0.63);
+	color: #FFFFFF;
+	font-weight: 100;
+	text-align: center;
+	text-transform: uppercase;	
+}
+.hover p {	
+	padding-bottom:2%;
+	margin-top: 0;	
+	font-size: 80%;
+}
+#m001:hover h3, #m001:hover p, #m002:hover h3, #m002:hover p, #m003:hover h3, #m003:hover p, #m004:hover h3, #m004:hover p,
+#l001:hover h3, #l001:hover p, #l002:hover h3, #l002:hover p, #l003:hover h3, #l003:hover p, #l004:hover h3, #l004:hover p,
+#f001:hover h3, #f001:hover p {
+	display:block;	
+}
+/************************************************EVENTO ESP - SÓLO GALERÍA*********************************************/
+.full-screen #section-1e1 {
+  width: 100vw;
+}
+
+#section-0e1 {	
+	width: 70%;	
+}
+#section-0e1 div{
+	width: 30%;
+	padding-top: 12%;	
+	padding-left: 12%;
+}
+#section-1e1  {
+	width: 80%;	
+	padding-top: 2%;	
+}
+
+#juicebox-container  {
+	/*border: 1px solid #D1D3D4;*/
+}
+
+/************************************************************MOVEMENT*********************************************/
+
+#m001{
+background-image: url("../img/eventos/movement/ediciones/001.jpg");
+}
+ 
+#m001:hover{
+	background-image: url("../img/eventos/movement/ediciones/color/001.jpg");
+}
+
+#m002{
+background-image: url("../img/eventos/movement/ediciones/002.jpg");
+}
+ 
+#m002:hover{
+	background-image: url("../img/eventos/movement/ediciones/color/002.jpg");
+}
+#m003{
+background-image: url("../img/eventos/movement/ediciones/003.jpg");
+}
+ 
+#m003:hover{
+	background-image: url("../img/eventos/movement/ediciones/color/003.jpg");
+}
+#m004{
+background-image: url("../img/eventos/movement/ediciones/004.jpg");
+}
+ 
+#m004:hover{
+	background-image: url("../img/eventos/movement/ediciones/color/004.jpg");
+}
+
+/************************************************************LIVE*********************************************/
+#l001{
+background-image: url("../img/eventos/live/ediciones/001.jpg");
+}
+ 
+#l001:hover{
+	background-image: url("../img/eventos/live/ediciones/color/001.jpg");
+}
+
+#l002{
+background-image: url("../img/eventos/live/ediciones/002.jpg");
+}
+ 
+#l002:hover{
+	background-image: url("../img/eventos/live/ediciones/color/002.jpg");
+}
+
+/************************************************************THE FACTORY*********************************************/
+#f001{
+background-image: url("../img/eventos/factory/ediciones/001.jpg");
+}
+ 
+#f001:hover{
+	background-image: url("../img/eventos/factory/ediciones/color/001.jpg");
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<link rel="stylesheet" type="text/css" href="../css/estilo_contacto.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/myjs.js"></script>
+
+<title>Contacto</title>
+
+</head>
+
+<body>
+<div id="wraper">
+	<nav id="sidebar" class="sidebar">
+	<img id="logo_menu" src="../img/menu/logo_negro.png">		
+	<ul class="menu">
+		<li><a href="../index.html">Inicio</a></li>
+		<li><a href="nosotros.html">Nosotros</a></li>
+		<li><a id="eventos" href="#">Eventos</a>
+  				<ul class="dropdown-content">
+  					<li><a href="movement.html">Movement</a></li>
+					<li><a href="movement.html">LIVE</a></li>
+					<li><a href="movement.html">The Factory</a></li>					
+				</ul>
+		</li>	
+		<li><a class="actual" href="contacto.html">Contacto</a></li>		
+	</ul>
+	<div id="footer_menu">
+		<p>Copyright ©</p>
+		<p>Todos los derechos reservados</p>		
+		<p>Desarrollado por</p>
+		<a target="_blank" href="https://www.facebook.com/silicio.co/"><img src="../img/menu/silicio.png"></a>			
+		<div id="redes">
+			<a target="_blank" href=""><img src="../img/redes/fb_n.png"></a>	
+			<a target="_blank" href="https://www.instagram.com/aesthetics.collective/"><img src="../img/redes/instagram_n.png"></a>	
+			<a target="_blank" href="https://www.youtube.com/channel/UCXRG4aWiP98rsMtvORzI3aQ/featured"><img src="../img/redes/youtube_n.png"></a>	
+		</div>
+	</div>
+	</nav>	
+		
+	<div id="contenido">	
+		<a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><img src="../img/menu/menu.png"></a>
+		<a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()"><img src="../img/menu/cerrar_menu.png"></a>
+		
+		<div id="suscripcion">	
+		<h2>Suscíbete para mantenerte informado</h2>
+			<form action="../php/nuevoRegistro.php" method="post">				
+				<input type="text" id="nombre" name="nombre" placeholder="Nombre">		
+				<input type="email" id="correo" name="correo" placeholder="Correo">
+				<p>Fecha de nacimiento</p>				
+				<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
+				<input type="text" id="celular" name="celular" placeholder="Celular">                     
+				<input type="submit" value="Suscribirse"/>                  
+			</form>
+        </div>
+        
+        <div id="datos">
+        	<h2>Datos de contacto</h2>
+        	<p><a href="mailto:aestheticscollective1@gmail.com">Correo</a> - aestheticscollective1@gmail.com</p>
+        	<p><a target="_blank" href="">Facebook</a> - @aesthetics.collective</p>
+        	<p><a target="_blank" href="https://www.instagram.com/aesthetics.collective/">Instagram</a> - @aesthetics.collective</p>    	
+       </div>
+			
+		<footer>
+			<a target="_blank" href="https://www.youtube.com/channel/UCXRG4aWiP98rsMtvORzI3aQ/featured"><img src="../img/redes/youtube.png"></a>		
+			<a target="_blank" href="https://www.instagram.com/aesthetics.collective/"><img src="../img/redes/instagram.png"></a>	
+			<a target="_blank" href=""><img src="../img/redes/fb.png"></a>				
+		</footer>	
+	</div>	
+</div>    
+</body>
+
+</html>

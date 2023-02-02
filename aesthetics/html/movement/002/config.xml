@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	useFlickr="true"
+	flickrUserName="aesthetics.collective"
+	flickrTags="m001"
+	backgroundColor="rgba(0,0,0,1)"
+	galleryWidth="75%"
+	galleryHeight="75%"
+	showThumbsButton="false"/>

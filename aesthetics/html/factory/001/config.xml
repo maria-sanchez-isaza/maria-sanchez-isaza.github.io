@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	useFlickr="true"
+	flickrUserName="aesthetics.collective"
+	flickrTags="m004"
+	galleryWidth="80%"
+	galleryHeight="80%"
+	backgroundColor="rgba(0,0,0,1)"
+	showOpenButton="true"
+	showThumbsButton="false"
+	galleryTitle="Aesthetic Movement #004"
+	useFullscreenExpand="false"/>

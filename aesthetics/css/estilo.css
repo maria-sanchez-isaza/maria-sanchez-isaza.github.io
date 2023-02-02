@@ -1,0 +1,250 @@
+/* CSS Document */
+html {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size:100%;
+	color: #D1D3D4;
+	background-color: #000000;
+	height: calc(100% - 80px);
+	margin: 0px;
+	padding: 40px;	
+}
+
+#wraper {	
+	border: 1px solid #D1D3D4;
+	border-width: 0.01em; 
+	height: 100%;
+	width:  100%;
+	overflow: hidden;
+	z-index: 100000;
+}
+/************************************************************MENU*********************************************/
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #F1F2F2;
+    overflow-x: hidden;
+    transition: 0.5s;    
+    box-sizing:border-box;
+}
+
+.menu a:hover, .sidebar a.actual:link, .sidebar a.actual:active, .sidebar a.actual:visited {
+    color:#D1D3D4;
+    background-color: #000000;
+
+}
+
+.menu a {
+    display: block;    
+    color: #000000;	
+    text-decoration: none;	
+	margin: 5% 0;
+	padding: 5% 10%;
+    
+}
+
+.sidebar ul, .sidebar li{	
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 25% 0;
+    display: block;    
+    min-width:200px;
+}
+
+.sidebar ul ul {
+	display:none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar ul ul a {
+	padding: 2% 15%;
+	font-size:97%;
+	color: #58595B;
+}
+
+#logo_menu {
+	width: 40%;
+	margin-top: 20%;
+	margin-left: 28%;
+}
+
+#footer_menu {
+	position: absolute;
+	bottom: 4%;
+	color: #5E5A5A;
+	text-transform: uppercase;
+	font-size: 60%;
+}
+
+#footer_menu, #footer_menu p {	
+	padding: 1% 5%;
+	margin: 0;
+	text-align: left;
+	color: #000000; 
+}
+
+#footer_menu img {
+	width: 15%;	
+	padding: 1% 5%;
+	margin: 0;
+}
+
+#redes {
+	padding: 0 4%;
+}
+#redes img {
+	padding: 15% 2% 0;	
+}
+
+/*******************************************************CONTENIDO****************************************/
+#abrir {
+	position: fixed;
+	margin: 0;
+	display: block;
+	clear: none;
+	float: left;
+}
+#cerrar {
+	position: fixed;
+	display:none;
+	clear: none;
+	float: left;
+	margin: 0;
+}
+
+#contenido {
+    transition: margin-left .5s;	
+	margin: 0;
+}
+
+#logo_ppal img {
+	position: absolute;
+	width: 40%;
+	top: 50%;
+	margin: 25%;
+	margin-top: -8%;
+}
+
+footer {
+	position: fixed;
+	bottom: 45px;
+	right: 48px;
+	overflow: auto;
+	width: 150px;
+	padding: 0.5%;
+}
+
+footer img {
+	display:block;
+	clear:none;
+	float:right;
+	width: 40px;
+	padding: 0 2%;
+}
+
+#flecha {
+	position: fixed;
+	top: 50%;
+	margin-top: -2%;
+	right: 55px;
+	overflow: hidden;
+	width: 40px;	
+}
+
+#animacion {
+	position: fixed;
+	top: 50%;
+	margin-top: -1.7%;
+	right: 80px;
+	overflow: hidden;
+	width: 55px;	
+}
+
+/***************************************************NAVEGACION HORIZONTAL****************************************/
+
+.full-screen {
+  display: flex;
+  width: 350vw;
+  max-height: 100%;
+  overflow: hidden;
+  height: 100%;
+
+  /* makes panels the entire window height */
+}
+
+section {
+	height: 100%;
+	display: block;
+	clear: both;
+	float: left;		  
+}
+
+#section-0 {
+	width: 100%;	
+}
+#section-0 div{
+	padding-top: 12%;	
+	padding-left: 12%;
+}
+
+#section-0 div p {
+	padding-top: 25%;	
+}
+
+#section-1 {
+	width: 30%;	
+}
+
+#section-1 div{		
+	padding-top: 40%;	
+}
+
+#section-2 {
+	width: 100%;		
+}
+#section-2 div{
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 18%;	
+}
+
+.marco {
+	border: 1px solid #D1D3D4;
+	padding: 15%;
+	width: 100%;
+}
+
+#section-3 {
+	width: 100%;	
+}
+
+#section-3 div{	
+	width: 40%;	
+	padding-top: 7%;	
+}
+
+
+/*******************************************************MOVIL*******************************************************/
+@media screen and (max-width: 1024px){
+	#wraper{
+		overflow: auto;
+	}
+	body {    
+    font-size:110%;
+	
+}
+
+
+}

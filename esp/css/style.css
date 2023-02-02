@@ -1,0 +1,549 @@
+/* CSS Document */
+html {
+	height: 100%;
+    overflow: auto;
+	
+}
+body {
+    font-family: 'Muli', sans-serif;
+    font-size:130%;
+	color: #000000;
+	background-color: #8DB9E4;
+	height: calc(100% - 100px);
+	margin: 0px;
+	padding: 50px;	
+}
+body h1 {
+    font-family: 'Lexend Deca', sans-serif;
+}
+/*********************** page boder   ****************************************************************************/
+.fixed {
+    position: fixed;
+}
+
+.fixed-page-border {
+    background: #ffffff;
+    z-index: 1000;
+}
+
+.fixed-page-border.top,
+.fixed-page-border.bottom {
+    left: 50px;
+    width: calc(100% - 100px);
+    height: 50px;
+}
+.fixed-page-border.top {
+    top: 0px;
+    
+}
+
+.fixed-page-border.bottom {
+    bottom: 0px;
+    
+}
+
+.fixed-page-border.right,
+.fixed-page-border.left {
+    top: 50px;
+    width: 50px;
+    height: calc(100% - 100px);
+}
+.fixed-page-border.right {
+    right: 0px;
+   
+}
+
+.fixed-page-border.left {
+    left: 0px;
+   
+}
+
+.fixed-page-border-cover.top,
+.fixed-page-border-cover.bottom {
+    width: 100%;
+    left: 0px;
+    background: #ffffff;
+    height: 50px;
+    z-index: 1001;
+}
+
+.fixed-page-border-cover.top {
+    top: 0px;
+}
+.fixed-page-border-cover.bottom {
+    bottom: 0px;
+}
+
+
+/******INDEX******/
+
+.relative-parent {
+  position:relative;
+}
+.hiding-parent {
+  overflow:hidden;
+}
+#anim {           
+	position: absolute;
+	width: 68%;	
+	margin: 4% 0 0 16%;	
+    
+}
+
+
+/************************************************************MENU*********************************************/
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;    
+    box-sizing:border-box;
+}
+
+#home a:hover, #about a:hover, #works a:hover, #contact a:hover {
+    background-size: 100% 100%;
+}
+
+#home a {
+  background-image: linear-gradient(180deg, transparent 10%, #8DB9E4 0);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .3s ease;
+}
+.sidebar #home a.actual:link, .sidebar #home a.actual:active, .sidebar #home a.actual:visited {   
+    background-color: #8DB9E4;
+}
+
+#about a {
+  background-image: linear-gradient(180deg, transparent 10%, #ff8760 0);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .3s ease;
+}
+.sidebar #about a.actual:link, .sidebar #about a.actual:active, .sidebar #about a.actual:visited {   
+    background-color: #ff8760;
+}
+
+#works a {
+  background-image: linear-gradient(180deg, transparent 10%, #FADE3C 0);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .3s ease;
+}
+ .sidebar #works a.actual:link, .sidebar #works a.actual:active, .sidebar #works a.actual:visited {   
+    background-color: #FADE3C;
+}
+
+#contact a {
+  background-image: linear-gradient(180deg, transparent 10%, #FFBCD8 0);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .3s ease;
+}
+ .sidebar #contact a.actual:link, .sidebar #contact a.actual:active, .sidebar #contact a.actual:visited {   
+    background-color: #FFBCD8;
+}
+
+
+
+.menu a {
+    display: block;    
+    color: #000000;	
+    text-decoration: none;	
+	margin: 5% 0;
+	padding: 5% 10%;
+    
+}
+
+.sidebar ul, .sidebar li{	
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 60% 0;
+    display: block;    
+ 
+}
+
+.sidebar ul ul {
+	display:none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar ul ul a {
+	padding: 2% 15%;
+	font-size:97%;
+	color: #58595B;
+}
+
+/*******************************************************LINKS****************************************/
+
+.underline a {
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(180deg, transparent 90%, #000000 0);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .4s ease;
+    
+}
+
+.underline a:hover {
+  background-size: 0 100%;
+}
+
+
+/*******************************************************CONTENIDO****************************************/
+#abrir {
+	position: fixed;
+	margin: 0;
+	display: block;
+	clear: none;
+	float: left;
+}
+#cerrar {
+	position: fixed;
+	display:none;
+	clear: none;
+	float: left;
+	margin: 0;
+}
+
+#abrir img, #cerrar img {
+    width: 50px;
+}
+#contenido {
+    transition: margin-left .5s;	
+	margin: 0;
+}
+
+#content  {
+    position: absolute;
+	width: 70%;	
+	margin: 80px 12%;	
+}
+#lenguages {
+    position: fixed;
+	top: 12px;
+	right: 50px;
+	overflow: auto;		
+    z-index: 2000;
+    font-size:80%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+footer {
+	position: fixed;
+	bottom: 8px;
+	right: 50px;
+	overflow: auto;
+	width: 150px;
+	padding: 0.5%;
+    z-index: 2000;
+}
+
+footer img {
+	display:block;
+	clear:none;
+	float:right;
+	width: 20px;
+	padding: 0 5%;
+}
+
+
+/**************************************************ABOUT*******************************************************/
+ #picture {
+    display: block;
+    clear: none;
+    float: left;
+    width: 30%;
+}
+#picture img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+}
+
+ #description {
+    display: block;
+    clear: none;
+    float: left;
+    width: 59%;
+    margin: 0 0 0 5%;
+}
+
+#h1About {
+    display: none;
+}
+
+/**************************************************WORKS*******************************************************/
+.works a, #lenguages a {
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(180deg, transparent 90%, #000000 0);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .4s ease;
+}
+
+.works a:hover, #lenguages a:hover  {
+  background-size: 100% 100%;
+    color: black;
+}
+.works .dates li, .works .dates ul,{	
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+.works ul, .works li{	
+    margin:2% 0 0 2%;
+    padding:0;
+    list-style:none inside;
+  /*****   columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;***/
+}
+
+.izq {
+    display: block;
+    clear: none;
+    float: left;
+    width: 48%;
+    margin: 1% 1% 4% 1%;
+}
+
+.der {
+    display: block;
+    clear: none;
+    float: right;
+    width: 48%;
+    margin: 1% 1% 4% 1%;
+}
+
+.center {
+    padding: 0 6%;
+}
+#arrow1 {
+    transform: rotate(90deg);
+    width: 25%;
+}
+#arrow2 {
+    transform: rotate(-90deg);
+    width: 25%;
+    float: right;
+}
+.c1 {
+    display: block;
+    clear: none;
+    float: left;
+    width: 18%;
+    margin: 1% 1% 4% 1%;
+}
+
+.c2 {
+    display: block;
+    clear: none;
+    float: right;
+    width: 43.3%;
+    margin: 1% 1% 4% 1%;
+}
+.c3 {
+    display: block;
+    clear: none;
+    float: right;
+    width: 32.5%;
+    margin: 1% 1% 4% 1%;
+}
+/**************************************************REELS*******************************************************/
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin-bottom: 2%;
+}
+.shadow {
+-moz-box-shadow: 10px 10px 5px #777;
+-webkit-box-shadow: 10px 10px 5px #777;
+box-shadow: 10px 10px 5px #777;
+
+}
+
+/*******************************************************MOVIL*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+@media screen and (max-width: 1024px){
+
+body {
+    
+    font-size:160%;	
+	height: calc(100% - 160px);	
+	padding: 80px;	
+}
+
+    /*********************** page boder   ****************************************************************************/
+
+.fixed-page-border.top,
+.fixed-page-border.bottom {
+    left: 100px;
+    width: calc(100% - 160px);
+    height: 80px;
+}
+
+
+.fixed-page-border.right,
+.fixed-page-border.left {
+    top: 80px;
+    width: 80px;
+    height: calc(100% - 160px);
+}
+
+.fixed-page-border-cover.top,
+.fixed-page-border-cover.bottom {
+ 
+    height: 80px;
+    z-index: 1001;
+}
+
+/*******************************************************CONTENIDO****************************************/
+#abrir img, #cerrar img {
+    width: 80px;
+}
+/*#contenido {
+    transition: margin-left .5s;	
+	margin: -52px 0;
+}
+
+#content  {
+    position:static;
+    width: 100%;	
+	margin: 80px 190px;	
+    
+}
+*/
+    
+
+#lenguages {
+    position: fixed;
+	top: 25px;
+	right: 80px;
+	overflow: auto;		
+    z-index: 2000;
+    font-size:90%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+footer {
+	position: fixed;
+	bottom: 15px;
+	right: 80px;
+	overflow: auto;
+	width: 300px;
+	padding: 0.5%;
+    z-index: 2000;
+}
+
+footer img {
+	display:block;
+	clear:none;
+	float:right;
+	width: 40px;
+	padding: 0 5%;
+}
+    
+/********MENU*******/
+    
+.sidebar a {
+    color: black;
+	padding: 2% 15%;
+	font-size:50px;
+	
+}
+    
+/********INDEX******/
+
+#anim {           
+	position: absolute;
+	width: 100%;	
+	margin: 50% 0 0 0;
+    
+}
+
+
+/********ABOUT*******/
+#h1About {
+    display: block;
+}
+
+#h1About2 {
+    display: none;
+}
+    
+#picture {
+    display: inline;
+    clear: both;
+    float: left;
+    width: 50%;
+    margin-left: 20%;
+}
+#picture img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+}
+ #description {
+     width: 85%;
+     margin-bottom: 15%;
+    display: block;
+    clear: none;
+    float: left;
+}
+
+    
+/********WORKS********/
+.izqm {
+    display: inline;
+    clear: both;
+    float: left;
+    width: 48%;
+    margin: 1% 1% 0% 1%;
+}
+
+.derm {
+    display: inline;
+    clear: both;
+    float: left;
+    width: 48%;
+    margin: 1% 1% 0% 1%;
+}
+
+.center {
+    padding: 0;    
+}
+
+.margin-mobile {
+        width: 90%;
+    }
+
+
+
+}

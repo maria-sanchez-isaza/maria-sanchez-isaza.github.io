@@ -1,0 +1,71 @@
+/* CSS Document */
+
+#suscripcion {
+    width: 30%;
+    margin: 12%;
+	display: block;
+	clear: none;
+	float: left;
+}
+
+#suscripcion input[type="text"],
+#suscripcion input[type="date"],
+#suscripcion input[type="email"],
+#suscripcion select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;    
+    height: 45px;
+	color: #D1D3D4;
+}
+#suscripcion input[type="date"] {
+	border-bottom: #000000;
+	width: 35%;
+}
+#suscripcion input[type="button"], 
+#suscripcion input[type="submit"]{
+    -moz-box-shadow: inset 0px 1px 0px 0px #D1D3D4;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #D1D3D4;
+    box-shadow: inset 0px 1px 0px 0px #D1D3D4;   
+    border: 1px solid #D1D3D4;
+	background-color: #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #D1D3D4;    
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;   
+	margin: 4% 0;	
+	float: left;
+}
+
+#suscripcion input[type="button"]:hover, 
+#suscripcion input[type="submit"]:hover {    
+    background-color:#D1D3D4;
+	color: #000000;
+}
+
+#datos {
+	display: block;
+	clear: none;
+	float: left;
+	margin: 12% 0;
+}
+
+#datos a {
+	text-decoration: none;
+	color: #D1D3D4;
+}
+
+#datos a:hover {	
+	color: #FFFFFF;
+	font-weight: 600;
+}
