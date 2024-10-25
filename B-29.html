@@ -26,34 +26,32 @@
         import { connect } from 'MP_SDK';
         let mpSdk;
         const VIEWS = {
-    COCKPIT: {
-        sweepId: 'x4ecx24w5keksf7wyy44e949c',
-        rotation: {"x":-16.540998461531387,"y":-4.333578315522384}
-    },
-    ENGINE: {
-        sweepId: 'spb6qbkx227rmgnt1ufeha8xd',
-        rotation: {"x":21.800455785617384,"y":72.36959308650638}
-    },
-    TAIL: {
-        sweepId: 'y51ew3b1yedhy8uiediy91s5d',
-        rotation: {"x":-16.846869296462913,"y":0.16017110995080674}
-    },
-    RADIO: {
-        sweepId: '9sa2bu3ugda5a4uz9xnp5q2qb',
-        rotation: {"x":-14.170083951897457,"y":57.708074233323347}
-    },
-    BOMBER: {
-        sweepId: 'gfm1tgrg6hiy2ms3p12kzsqkb',
-        rotation: {"x":-31.424400640846944,"y":-86.42943530506342}
-    }
-};
-
+            COCKPIT: {
+                sweepId: 'x4ecx24w5keksf7wyy44e949c',
+                rotation: {"x":-16.540998461531387,"y":-4.333578315522384}
+            },
+            ENGINE: {
+                sweepId: 'spb6qbkx227rmgnt1ufeha8xd',
+                rotation: {"x":21.800455785617384,"y":72.36959308650638}
+            },
+            TAIL: {
+                sweepId: 'y51ew3b1yedhy8uiediy91s5d',
+                rotation: {"x":-16.846869296462913,"y":0.16017110995080674}
+            },
+            RADIO: {
+                sweepId: '9sa2bu3ugda5a4uz9xnp5q2qb',
+                rotation: {"x":-14.170083951897457,"y":57.708074233323347}
+            },
+            BOMBER: {
+                sweepId: 'gfm1tgrg6hiy2ms3p12kzsqkb',
+                rotation: {"x":-31.424400640846944,"y":-86.42943530506342}
+            }
+        };
         
-
         (async function connectSdk() {
             const iframe = document.getElementById('showcase-iframe');
             try {
-                mpSdk = await connect(iframe);
+                mpSdk = await connect(iframe, 'trfsdzx8c6s46tu5ytkuftamd', '3.5');
                 console.log('SDK connected successfully');
                 handleHashChange(); // Check hash on initial load
             } catch (e) {
@@ -77,33 +75,28 @@
                 console.error('Error moving to view or setting rotation:', error);
             });
         }
-
         
-
-        // Function to handle hash changes
         function handleHashChange() {
-    const hash = window.location.hash.toLowerCase();
-    switch(hash) {
-        case '#cockpit':
-            switchToView(VIEWS.COCKPIT);
-            break;
-        case '#engine':
-            switchToView(VIEWS.ENGINE);
-            break;
-        case '#tail':
-            switchToView(VIEWS.TAIL);
-            break;
-        case '#radio':
-            switchToView(VIEWS.RADIO);
-            break;
-        case '#bomber':
-            switchToView(VIEWS.BOMBER);
-            break;
-        // You can add a default case here if needed
-    }
-}
-
-        // Add event listener for hash changes
+            const hash = window.location.hash.toLowerCase();
+            switch(hash) {
+                case '#cockpit':
+                    switchToView(VIEWS.COCKPIT);
+                    break;
+                case '#engine':
+                    switchToView(VIEWS.ENGINE);
+                    break;
+                case '#tail':
+                    switchToView(VIEWS.TAIL);
+                    break;
+                case '#radio':
+                    switchToView(VIEWS.RADIO);
+                    break;
+                case '#bomber':
+                    switchToView(VIEWS.BOMBER);
+                    break;
+            }
+        }
+        
         window.addEventListener('hashchange', handleHashChange);
     </script>
 </body>
