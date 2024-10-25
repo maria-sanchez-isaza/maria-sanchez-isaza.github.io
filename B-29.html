@@ -18,7 +18,7 @@
 </head>
 <body>
     <iframe
-        src="https://my.matterport.com/show?m=Qa3Lu8iPfHW&play=1&applicationKey=trfsdzx8c6s46tu5ytkuftamd"
+        src="https://my.matterport.com/show?m=Qa3Lu8iPfHW&play=1&applicationKey=034mez6zrcqma569ur3kcw2zb"
         allow="fullscreen *"
         id="showcase-iframe">
     </iframe>
@@ -51,7 +51,7 @@
         (async function connectSdk() {
             const iframe = document.getElementById('showcase-iframe');
             try {
-                mpSdk = await connect(iframe, 'trfsdzx8c6s46tu5ytkuftamd', '3.5');
+                mpSdk = await connect(iframe, '034mez6zrcqma569ur3kcw2zb', '3.5');
                 console.log('SDK connected successfully');
                 handleHashChange(); // Check hash on initial load
             } catch (e) {
