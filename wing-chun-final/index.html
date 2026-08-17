@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive 3D learning resource for the Wing Chun Siu Nim Tau form." />
+  <title>Wing Chun: Siu Nim Tau</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="page-header">
+      <div class="intro-copy">
+        <p class="eyebrow">Interactive 3D Learning Resource</p>
+        <h1>Wing Chun: Siu Nim Tau</h1>
+        <p class="intro">
+          Explore the Siu Nim Tau form movement by movement. Use the 3D model to study each technique from different angles, move through the sequence at your own pace, or drag the timeline to review any part of the form.
+        </p>
+      </div>
+
+      <div class="interaction-guide" aria-label="3D model navigation instructions">
+        <div class="guide-item"><span class="guide-icon">↻</span><span><strong>Rotate</strong><small>Click + drag</small></span></div>
+        <div class="guide-item"><span class="guide-icon">＋</span><span><strong>Zoom</strong><small>Scroll</small></span></div>
+        <div class="guide-item"><span class="guide-icon">↔</span><span><strong>Pan</strong><small>Right-click + drag</small></span></div>
+      </div>
+    </header>
+
+    <section class="experience-card" aria-label="Wing Chun movement viewer">
+      <div class="learning-stage">
+        <aside class="movement-panel" aria-live="polite">
+          <p class="panel-label">Current movement</p>
+          <div class="movement-number" id="movementNumber">Movement 1 of 72</div>
+          <h2 id="movementName">Double Tan Sau</h2>
+          <p id="movementDescription">Palm-up hands.</p>
+        </aside>
+
+        <section class="viewer-card" aria-label="Animated Wing Chun model">
+          <model-viewer
+            id="wingChunModel"
+            src="models/wing-chun.glb"
+            alt="Animated 3D character demonstrating the Wing Chun Siu Nim Tau form"
+            camera-controls
+            touch-action="pan-y"
+            environment-image="neutral"
+            exposure="1"
+            shadow-intensity="0.65"
+            shadow-softness="1"
+            interaction-prompt="auto"
+            autoplay>
+            <div class="model-error" slot="error">
+              The 3D model could not be loaded. Confirm that <strong>models/wing-chun.glb</strong> exists.
+            </div>
+          </model-viewer>
+        </section>
+      </div>
+
+      <div class="player-controls" aria-label="Animation controls">
+        <div class="timeline-row">
+          <span id="currentTime">0:00</span>
+          <label class="sr-only" for="timeline">Animation timeline</label>
+          <input id="timeline" type="range" min="0" max="115" step="0.01" value="0" />
+          <span id="duration">1:55</span>
+        </div>
+
+        <div class="transport-row">
+          <button id="previousButton" type="button" class="transport-button">← <span>Previous</span></button>
+          <button id="playButton" type="button" class="primary">Pause</button>
+          <button id="nextButton" type="button" class="transport-button"><span>Next</span> →</button>
+        </div>
+
+        <div class="movement-tools">
+          <label class="movement-select-label" for="movementSelect">
+            <span>Jump to movement</span>
+            <select id="movementSelect"></select>
+          </label>
+          <div id="movementContext" class="movement-context" aria-label="Nearby movements"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
